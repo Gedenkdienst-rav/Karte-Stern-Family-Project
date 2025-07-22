@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5cdbc64cfaf915098553b3efe482904f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5cdbc64cfaf915098553b3efe482904f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5cdbc64cfaf915098553b3efe482904f = L.map(
+                "map_5cdbc64cfaf915098553b3efe482904f",
+                {
+                    center: [51.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0446ee9c6033df672400b24f2b05e3f0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+            var marker_a066adf01cbd743940de8740851b0fd4 = L.marker(
+                [49.4521, 11.0767],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_c748cb6b24e21f6e4e31a0f1ccaedb8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_154a2eccd5e9b2205089ff0e25994208 = $(`<div id="html_154a2eccd5e9b2205089ff0e25994208" style="width: 100.0%; height: 100.0%;"><b>Nürnberg, Deutschland</b><br>Wohnort der Familie Stern bis zur Deportation 1941. Rückkehr nach 1945.</div>`)[0];
+            popup_c748cb6b24e21f6e4e31a0f1ccaedb8c.setContent(html_154a2eccd5e9b2205089ff0e25994208);
+        
+
+        marker_a066adf01cbd743940de8740851b0fd4.bindPopup(popup_c748cb6b24e21f6e4e31a0f1ccaedb8c)
+        ;
+
+        
+    
+    
+            marker_a066adf01cbd743940de8740851b0fd4.bindTooltip(
+                `<div>
+                     Nürnberg, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fd9c12857188c6926aa74f2a2425c44 = L.marker(
+                [49.4771, 10.9887],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_1b3f1911049e3a814c86905ba85f48d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d6c580336fcb23e47f4ffac4771f2f7 = $(`<div id="html_8d6c580336fcb23e47f4ffac4771f2f7" style="width: 100.0%; height: 100.0%;"><b>Fürth, Deutschland</b><br>Geburtsort von Samuel Stern (1939).</div>`)[0];
+            popup_1b3f1911049e3a814c86905ba85f48d1.setContent(html_8d6c580336fcb23e47f4ffac4771f2f7);
+        
+
+        marker_1fd9c12857188c6926aa74f2a2425c44.bindPopup(popup_1b3f1911049e3a814c86905ba85f48d1)
+        ;
+
+        
+    
+    
+            marker_1fd9c12857188c6926aa74f2a2425c44.bindTooltip(
+                `<div>
+                     Fürth, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b1bff9f8b49530b1f3c8fb8a3b976b3 = L.marker(
+                [56.9496, 24.1052],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_26f12bdf1caa926f507d4e80313e57e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e60aef2dfbd75e3155f4c6701ce3295 = $(`<div id="html_5e60aef2dfbd75e3155f4c6701ce3295" style="width: 100.0%; height: 100.0%;"><b>Riga, Lettland</b><br>Deportationsziel der Familie Stern (Dezember 1941), Ghetto und Gefängnisaufenthalte.</div>`)[0];
+            popup_26f12bdf1caa926f507d4e80313e57e7.setContent(html_5e60aef2dfbd75e3155f4c6701ce3295);
+        
+
+        marker_9b1bff9f8b49530b1f3c8fb8a3b976b3.bindPopup(popup_26f12bdf1caa926f507d4e80313e57e7)
+        ;
+
+        
+    
+    
+            marker_9b1bff9f8b49530b1f3c8fb8a3b976b3.bindTooltip(
+                `<div>
+                     Riga, Lettland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce1908b05345bfdb89a10256c7485967 = L.marker(
+                [57.8193, 28.3318],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_99bfd34c422d5edb71cb697c2ad9fcc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de8ded0415aa444cc1aa727b5c68d81c = $(`<div id="html_de8ded0415aa444cc1aa727b5c68d81c" style="width: 100.0%; height: 100.0%;"><b>Pskov (nahe Pleskau), Russland</b><br>Unklar lokalisierte Lagerregion zwischen Pleskau und Rostow (ab Februar 1943).</div>`)[0];
+            popup_99bfd34c422d5edb71cb697c2ad9fcc7.setContent(html_de8ded0415aa444cc1aa727b5c68d81c);
+        
+
+        marker_ce1908b05345bfdb89a10256c7485967.bindPopup(popup_99bfd34c422d5edb71cb697c2ad9fcc7)
+        ;
+
+        
+    
+    
+            marker_ce1908b05345bfdb89a10256c7485967.bindTooltip(
+                `<div>
+                     Pskov (nahe Pleskau), Russland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c8cb76e325b5ef1f2c8cc9c9a9b2986 = L.marker(
+                [47.2313, 39.7233],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_59cc49eea7a14efe0c12a11ea41b0b6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d96a1494b9451545bd57da65c19fb44d = $(`<div id="html_d96a1494b9451545bd57da65c19fb44d" style="width: 100.0%; height: 100.0%;"><b>Rostow am Don, Russland</b><br>Südlicher Punkt der vermuteten Lagerverlegung (1943).</div>`)[0];
+            popup_59cc49eea7a14efe0c12a11ea41b0b6a.setContent(html_d96a1494b9451545bd57da65c19fb44d);
+        
+
+        marker_7c8cb76e325b5ef1f2c8cc9c9a9b2986.bindPopup(popup_59cc49eea7a14efe0c12a11ea41b0b6a)
+        ;
+
+        
+    
+    
+            marker_7c8cb76e325b5ef1f2c8cc9c9a9b2986.bindTooltip(
+                `<div>
+                     Rostow am Don, Russland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3177b684617b1c3d0f4232c34103e840 = L.marker(
+                [53.1836, 13.1697],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_679167d47b19ff0af6cee36f8c366a51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb771a4019ab67962ca0a46be696b480 = $(`<div id="html_eb771a4019ab67962ca0a46be696b480" style="width: 100.0%; height: 100.0%;"><b>Ravensbrück, Deutschland</b><br>KZ-Aufenthalt von Karolina, Peter und Samuel ab Februar 1944.</div>`)[0];
+            popup_679167d47b19ff0af6cee36f8c366a51.setContent(html_eb771a4019ab67962ca0a46be696b480);
+        
+
+        marker_3177b684617b1c3d0f4232c34103e840.bindPopup(popup_679167d47b19ff0af6cee36f8c366a51)
+        ;
+
+        
+    
+    
+            marker_3177b684617b1c3d0f4232c34103e840.bindTooltip(
+                `<div>
+                     Ravensbrück, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f953b73a17411907cf583229c59b28a = L.marker(
+                [52.7519, 9.9095],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_71d0979e2b7754c759a3e146cb00854b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8df618cc33f9fdf1f169579e57d71c8a = $(`<div id="html_8df618cc33f9fdf1f169579e57d71c8a" style="width: 100.0%; height: 100.0%;"><b>Bergen-Belsen, Deutschland</b><br>KZ-Aufenthalt März–April 1945, Befreiung am 15. April 1945.</div>`)[0];
+            popup_71d0979e2b7754c759a3e146cb00854b.setContent(html_8df618cc33f9fdf1f169579e57d71c8a);
+        
+
+        marker_2f953b73a17411907cf583229c59b28a.bindPopup(popup_71d0979e2b7754c759a3e146cb00854b)
+        ;
+
+        
+    
+    
+            marker_2f953b73a17411907cf583229c59b28a.bindTooltip(
+                `<div>
+                     Bergen-Belsen, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a63390c38fa7896a8edd9e91dd8c13f1 = L.marker(
+                [51.019, 11.3002],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_b3dbe419cdf3d6dca21e75be005d5750 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b539d2f9dbd999cf7209e2776aff6eea = $(`<div id="html_b539d2f9dbd999cf7209e2776aff6eea" style="width: 100.0%; height: 100.0%;"><b>Weimar/Buchenwald, Deutschland</b><br>Arthur Stern im KZ Buchenwald ab März 1944, dort verstorben am 30. Mai 1944.</div>`)[0];
+            popup_b3dbe419cdf3d6dca21e75be005d5750.setContent(html_b539d2f9dbd999cf7209e2776aff6eea);
+        
+
+        marker_a63390c38fa7896a8edd9e91dd8c13f1.bindPopup(popup_b3dbe419cdf3d6dca21e75be005d5750)
+        ;
+
+        
+    
+    
+            marker_a63390c38fa7896a8edd9e91dd8c13f1.bindTooltip(
+                `<div>
+                     Weimar/Buchenwald, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dba56cedbe5ddf346557dd1ba4387e08 = L.marker(
+                [53.5396, 8.5809],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_42fd61a76f94e7e35f52e12b78091193 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e3ce19d96e4003944158e75ce1e06a5 = $(`<div id="html_4e3ce19d96e4003944158e75ce1e06a5" style="width: 100.0%; height: 100.0%;"><b>Bremerhaven, Deutschland</b><br>Ausreisehafen der Familie Stern am 8. Januar 1947.</div>`)[0];
+            popup_42fd61a76f94e7e35f52e12b78091193.setContent(html_4e3ce19d96e4003944158e75ce1e06a5);
+        
+
+        marker_dba56cedbe5ddf346557dd1ba4387e08.bindPopup(popup_42fd61a76f94e7e35f52e12b78091193)
+        ;
+
+        
+    
+    
+            marker_dba56cedbe5ddf346557dd1ba4387e08.bindTooltip(
+                `<div>
+                     Bremerhaven, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aaeda667d244762588caa20cb4d03dbb = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_8c1395320168ec0912219479cb8ae544 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a96e8e2306a5d70eef00666a58ccaf4c = $(`<div id="html_a96e8e2306a5d70eef00666a58ccaf4c" style="width: 100.0%; height: 100.0%;"><b>New York City, USA</b><br>Ankunftsort der Familie Stern, Wohnsitz und Einbürgerung Peter Sterns (1952).</div>`)[0];
+            popup_8c1395320168ec0912219479cb8ae544.setContent(html_a96e8e2306a5d70eef00666a58ccaf4c);
+        
+
+        marker_aaeda667d244762588caa20cb4d03dbb.bindPopup(popup_8c1395320168ec0912219479cb8ae544)
+        ;
+
+        
+    
+    
+            marker_aaeda667d244762588caa20cb4d03dbb.bindTooltip(
+                `<div>
+                     New York City, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b56952b97f003ee429da9677d8b79bc = L.marker(
+                [26.7153, -80.0534],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_d708b812b7f296a73895410afa6c26d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26c0509db689a0ccfe8a37b29bc73684 = $(`<div id="html_26c0509db689a0ccfe8a37b29bc73684" style="width: 100.0%; height: 100.0%;"><b>West Palm Beach, Florida, USA</b><br>Peter Stern bei Onkel Willie zur Erholung nach Ankunft in den USA.</div>`)[0];
+            popup_d708b812b7f296a73895410afa6c26d9.setContent(html_26c0509db689a0ccfe8a37b29bc73684);
+        
+
+        marker_5b56952b97f003ee429da9677d8b79bc.bindPopup(popup_d708b812b7f296a73895410afa6c26d9)
+        ;
+
+        
+    
+    
+            marker_5b56952b97f003ee429da9677d8b79bc.bindTooltip(
+                `<div>
+                     West Palm Beach, Florida, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2054fc69e9a9dc70ba5ec87e075b6f6 = L.marker(
+                [45.5017, -73.5673],
+                {}
+            ).addTo(map_5cdbc64cfaf915098553b3efe482904f);
+        
+    
+        var popup_63891cad27a3ee36c9d7d45dd5a59c79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e46d47e7dcc328fd50cc766b0d2b7ee = $(`<div id="html_6e46d47e7dcc328fd50cc766b0d2b7ee" style="width: 100.0%; height: 100.0%;"><b>Montreal, Kanada</b><br>Wohnort von Martin Uhlfelder, Karolinas Bruder, nach dem Krieg.</div>`)[0];
+            popup_63891cad27a3ee36c9d7d45dd5a59c79.setContent(html_6e46d47e7dcc328fd50cc766b0d2b7ee);
+        
+
+        marker_b2054fc69e9a9dc70ba5ec87e075b6f6.bindPopup(popup_63891cad27a3ee36c9d7d45dd5a59c79)
+        ;
+
+        
+    
+    
+            marker_b2054fc69e9a9dc70ba5ec87e075b6f6.bindTooltip(
+                `<div>
+                     Montreal, Kanada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
